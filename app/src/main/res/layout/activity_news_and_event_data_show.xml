@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="csitmnr.newsproject2.NewsAndEventDataShow">
+
+    <include android:id="@+id/toolbar1"
+        layout="@layout/toolbar"/>
+
+    <TextView
+        android:layout_below="@+id/toolbar1"
+        android:id="@+id/title1"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="8dp"/>
+    <LinearLayout
+        android:layout_margin="8dp"
+        android:id="@+id/linearLayout"
+        android:layout_below="@+id/title1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:text="Created At"
+            android:id="@+id/created_at1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            />
+        <TextView
+            android:text="Updated At"
+            android:id="@+id/updated_at1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/my_pic"
+        android:layout_margin="8dp"
+        />
+
+    <TextView
+        android:layout_margin="8dp"
+        android:textSize="15dp"
+        android:id="@+id/intro_text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image1"
+        android:layout_centerHorizontal="true"
+        android:text="Intro Text" />
+
+    <TextView
+        android:layout_below="@+id/intro_text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/detail1"
+        android:text="Detail"
+        android:layout_margin="8dp"
+        android:textStyle="normal"
+        />
+
+
+</RelativeLayout>
